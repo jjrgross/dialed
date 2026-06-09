@@ -1,0 +1,26 @@
+{
+  "name": "dialed",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "mobile",
+    "web",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "dev:mobile": "npm run start --workspace=mobile",
+    "dev:web": "npm run dev --workspace=web",
+    "dev:convex": "npx convex dev",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "codegen": "npx convex codegen"
+  },
+  "devDependencies": {
+    "convex": "^1.21.0",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
