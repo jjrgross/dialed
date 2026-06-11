@@ -89,3 +89,44 @@
   color: var(--text-muted);
   font-style: italic;
 }
+
+.loading {
+  color: var(--text-muted);
+}
+
+.errorBox {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 640px;
+}
+
+.errorBox h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fca5a5;
+}
+
+.errorBox p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.errorBox code {
+  background: var(--surface-light);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.checklist {
+  margin-left: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.checklist li {
+  margin-bottom: 0.5rem;
+}
